@@ -1,65 +1,64 @@
 //	Headings
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900')
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P')
 
-.gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6
-  color: #222
-  font-weight: bold
-  font-family: 'Roboto', sans-serif
-  font-weight: 900
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07)
+h1, h2, h3, h4, h5, h6, p
+  margin: 0 0 .75em
 
-.gigantic
-  font-size: 110px
-  line-height: 1.09
-  letter-spacing: -2px
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child
+  margin: 0
 
-.huge, h1
-  font-size: 68px
-  line-height: 1.05
-  @media only screen and (max-width: 680px)
-    font-size: 44px
-
-.large, h2
-  font-size: 42px
-  line-height: 1.14
-  @media only screen and (max-width: 680px)
-    font-size: 32px
-
-.bigger, h3
-  font-size: 26px
-  line-height: 1.38
-  @media only screen and (max-width: 680px)
-    font-size: 22px
-
-.big, h4
-  font-size: 22px
-  line-height: 1.38
-  @media only screen and (max-width: 680px)
-    font-size: 18px
-
-.small, small
-  font-size: 10px
-  line-height: 1.2
-
-
-// Basic Text Style
-
-p
-  margin: 0 0 20px 0
+h1
+  font-size: 2rem
   font-weight: 400
-  font-size: 14px
+  line-height: 1.15
+  text-transform: uppercase
+  letter-spacing: 3px
 
-em
-  font-style: italic
+h2
+  font-size: 1.2rem
+  text-transform: uppercase
+  letter-spacing: 2px
+  line-height: 1
 
-strong
-  font-weight: bold
+.title-large
+  font-size: 3rem
+  font-weight: 900
+  line-height: .9
+  span
+    font-weight: 400
 
-hr
-  border: solid #ddd
-  border-width: 1px 0 0
-  clear: both
-  margin: 10px 0 30px
-  height: 0
+.title-box
+  background: $aqua
+  color: white
+  margin: 0 auto
+  padding: 2em
+  transform: translateY(30%)
+  max-width: 90%
+  @media (min-width: 495px)
+    transform: translateY(50%)
+
+  & + .bg-primary
+    padding-top: 6em
+    @media (min-width: 495px)
+      padding-top: 8em
+
+  @media (min-width: 725px)
+    max-width: 700px  
+
+.title-footer
+  text-transform: uppercase
+  letter-spacing: 3px
+  line-height: 1
+
+  &::before, &::after
+    content: ''
+    display: block
+    height: 1px
+    background: white
+    opacity: 0.25
+    margin: .75em 0
+
+.text-intro
+  font-size: 1.2rem
