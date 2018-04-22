@@ -87,7 +87,8 @@ gulp.task('watch', function(){
         server: {
             baseDir: "./build"
         },
-        notify: false
+        notify: false,
+        open: false
     });
 
     gulp.watch(styleSrc,['sass']);
