@@ -3,8 +3,11 @@
 // --------------------------------------------
 var autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
+    connect = require('gulp-connect'),
     del = require('del'),
     gulp = require('gulp'),
+    push = require('git-push'),
+    argv = require('minimist')(process.argv.slice(2)),
     minifycss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
     sass = require('gulp-sass'),
@@ -84,7 +87,8 @@ gulp.task('watch', function(){
         server: {
             baseDir: "./build"
         },
-        notify: false
+        notify: false,
+        open: false
     });
 
     gulp.watch(styleSrc,['sass']);
@@ -97,3 +101,6 @@ gulp.task('watch', function(){
 
 // use default task to launch Browsersync and watch JS files
 gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
+
+
+gulp.task('clean', del.bind(null, ['build/*', '!build/.git'], { dot: true }));

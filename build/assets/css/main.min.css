@@ -187,7 +187,8 @@ th {
 
 body {
   font-size: 14px;
-  line-height: 1.6; }
+  line-height: 1.6;
+  text-align: center; }
 
 img {
   max-width: 100%;
@@ -233,10 +234,10 @@ input[type="button"] {
     margin-bottom: .6em; }
 
 .btn--primary {
-  background: #85144B;
+  background: #00ADEE;
   color: white; }
   .btn--primary:hover, .btn--primary:focus {
-    background: #430a26;
+    background: #0075a2;
     color: white; }
 
 a {
@@ -288,7 +289,7 @@ h2 {
     font-weight: 400; }
 
 .title-box {
-  background: #7FDBFF;
+  background: #0071BC;
   color: white;
   margin: 0 auto;
   padding: 2em;
@@ -353,17 +354,30 @@ h2 {
   padding-top: 1em; }
 
 .logo {
-  width: 25%;
+  width: 20%;
   min-width: 5rem;
   max-width: 15rem; }
 
+header video {
+  display: none; }
+
+@media (min-width: 925px) {
+  .header-video {
+    display: inline;
+    position: fixed;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    z-index: -100; } }
+
 .main-nav {
-  background: #7FDBFF;
+  font-family: "Press Start 2P";
+  background: #0071BC;
   position: absolute;
   top: 0;
   right: 0;
   left: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   overflow: hidden;
   transition: all ease-in-out 250ms; }
   @media (min-width: 725px) {
@@ -372,7 +386,7 @@ h2 {
       flex: auto;
       background: none;
       margin-top: 1em;
-      margin-left: 2em;
+      margin-left: 12em;
       left: 0; } }
   .main-nav ul {
     display: flex;
@@ -406,7 +420,7 @@ h2 {
       @media (min-width: 725px) {
         .main-nav a:hover {
           background: none;
-          color: #8e1047; } }
+          color: #d9d9d9; } }
   .main-nav.is-open {
     left: 0; }
 
@@ -443,7 +457,7 @@ h2 {
     opacity: 0; }
 
 .hero {
-  background: linear-gradient(to right, #111, #7FDBFF);
+  background: linear-gradient(to right, #2e242c, #00ADEE);
   color: white;
   padding: 8em 0em 8em 0em;
   text-align: center; }
@@ -459,7 +473,8 @@ h2 {
     margin-top: 10vmax; } }
 
 .sales-points {
-  padding: 10vh 0 0; }
+  padding: 10vh 0 0;
+  background: white; }
   .sales-points .sales-point {
     margin-bottom: 2.5em; }
     .sales-points .sales-point:first-of-type {
@@ -470,25 +485,25 @@ h2 {
       .sales-points .sales-point:first-of-type {
         margin-top: 0; } }
 
-.promo .bg-primary {
-  text-align: left;
-  padding-left: 7%;
-  padding-top: 7.5em;
-  padding-bottom: 7.5em; }
-
-.promo .img-box-1 {
-  background: url(../img/cookies.jpg);
-  background-size: cover;
-  background-position: center; }
-
-.promo .img-box-2 {
-  background: url(../img/team.jpg);
-  background-size: cover;
-  background-position: center; }
+.promo {
+  background: white; }
+  .promo .bg-primary {
+    text-align: left;
+    padding-left: 7%;
+    padding-top: 7.5em;
+    padding-bottom: 7.5em; }
+  .promo .img-box-1 {
+    background: url(../img/cakepops.jpg);
+    background-size: cover;
+    background-position: center; }
+  .promo .img-box-2 {
+    background: url(../img/fun-team.jpg);
+    background-size: cover;
+    background-position: center; }
 
 .cta {
   background-color: #ddd;
-  background-image: url(../img/call-to-action-background.jpg);
+  background-image: url(../img/cookies.jpg);
   background-size: cover;
   background-position: center;
   padding: 5em 0;
@@ -502,7 +517,7 @@ h2 {
       .cta::before, .cta::after {
         content: '';
         display: block;
-        background: #FF4136;
+        background: #0071BC;
         position: absolute;
         width: 100%;
         border: 1em solid white; }
