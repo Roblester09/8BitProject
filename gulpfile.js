@@ -97,3 +97,14 @@ gulp.task('watch', function(){
 
 // use default task to launch Browsersync and watch JS files
 gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
+
+
+// Server task for Heroku
+
+gulp.task('serveprod', function () {
+    connect.server({
+        root: [build/index.html],
+        port: process.env.PORT || 5000, // localhost:5000
+        livereload: false
+    });
+});
