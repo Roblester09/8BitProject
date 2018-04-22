@@ -12,6 +12,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     images = require('gulp-imagemin'),
+    runSeq = require('run-sequence'),
     browserSync = require('browser-sync').create();
 
 
@@ -97,3 +98,7 @@ gulp.task('watch', function(){
 
 // use default task to launch Browsersync and watch JS files
 gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
+
+gulp.task('heroku:production', function () {
+    runSeq('clean', 'build', 'minify')
+})
