@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "assemble": "^0.24.3",
+        "git-push": "^0.1.1",
         "gulp": "^3.9.1",
         "gulp-autoprefixer": "5.0.0",
         "gulp-concat": "^2.6.1",
@@ -36,6 +37,7 @@
         "gulp-wrap": "^0.13.0",
         "lodash": "^4.17.5",
         "marked": "^0.3.19",
+        "minimist": "^1.2.0",
         "nib": "^1.1.2",
         "scrollreveal": "^3.3.6"
     }

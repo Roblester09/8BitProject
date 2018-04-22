@@ -6,6 +6,8 @@ var autoprefixer = require('gulp-autoprefixer'),
     connect = require('gulp-connect'),
     del = require('del'),
     gulp = require('gulp'),
+    push = require('git-push'),
+    argv = require('minimist')(process.argv.slice(2)),
     minifycss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
     sass = require('gulp-sass'),
@@ -99,10 +101,16 @@ gulp.task('watch', function(){
 // use default task to launch Browsersync and watch JS files
 gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
 
-gulp.task('serveprod', function () {
-    connect.server({
-        root: [htmlDest],
-        port: process.env.PORT || 5000, // localhost:5000
-        livereload: false
-    });
+
+gulp.task('clean', del.bind(null, ['build/*', '!build/.git'], { dot: true }));
+
+gulp.task('build', ['clean'], function () {
+    // TODO: Build website from source files into the `./build` folder
+});
+
+gulp.task('deploy', function (cb) {
+    var remote = argv.production ?
+        { name: 'production', url: 'https://github.com/Roblester09/8BitProject', branch: 'gh-pages' },
+        { name: 'test', url: 'https://github.com/Roblester09/8BitProject', branch: 'gh-pages'};
+    push('./build', remote, cb);
 });
