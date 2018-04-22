@@ -103,7 +103,7 @@ gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
 
 gulp.task('serveprod', function () {
     connect.server({
-        root: [build/index.html],
+        root: ['build/*.html'],
         port: process.env.PORT || 5000, // localhost:5000
         livereload: false
     });
