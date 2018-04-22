@@ -103,14 +103,3 @@ gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
 
 
 gulp.task('clean', del.bind(null, ['build/*', '!build/.git'], { dot: true }));
-
-gulp.task('build', ['clean'], function () {
-    // TODO: Build website from source files into the `./build` folder
-});
-
-gulp.task('deploy', function (cb) {
-    var remote = argv.production ?
-        { name: 'production', url: 'https://github.com/Roblester09/8BitProject', branch: 'gh-pages' },
-        { name: 'test', url: 'https://github.com/Roblester09/8BitProject', branch: 'gh-pages'};
-    push('./build', remote, cb);
-});
