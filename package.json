@@ -3,30 +3,39 @@
     "version": "1.0.0",
     "description": "Eight Bit Website",
     "main": "index.html",
-    "scripts": {
-        "start": "node app",
-        "postinstall": "gulp default"
-    },
+    "scripts": {},
     "author": "Robert Lester",
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.7.11",
-        "del": "^1.2.0"
+        "del": "^1.2.0",
+        "gulp-clean": "^0.4.0"
     },
     "dependencies": {
+        "assemble": "^0.24.3",
         "gulp": "^3.9.1",
         "gulp-autoprefixer": "5.0.0",
         "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.5.0",
+        "gulp-extname": "^0.2.2",
         "gulp-imagemin": "^4.1.0",
+        "gulp-load-plugins": "^1.5.0",
         "gulp-minify-css": "1.2.4",
+        "gulp-minify-html": "^1.0.6",
         "gulp-notify": "^3.2.0",
         "gulp-plumber": "^1.2.0",
         "gulp-rename": "^1.2.2",
+        "gulp-rev": "^8.1.1",
         "gulp-sass": "^3.2.1",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-stylus": "^2.7.0",
+        "gulp-template": "^5.0.0",
         "gulp-uglify": "^3.0.0",
+        "gulp-usemin": "^0.3.29",
+        "gulp-util": "^3.0.8",
         "gulp-wrap": "^0.13.0",
+        "lodash": "^4.17.5",
+        "marked": "^0.3.19",
         "nib": "^1.1.2",
         "scrollreveal": "^3.3.6"
     }
