@@ -79,28 +79,11 @@ gulp.task('vendors', function() {
 
 
 
-// Watch for changes
-gulp.task('watch', function(){
 
-    // Serve files from the root of this project
-    browserSync.init({
-        server: {
-            baseDir: "./build"
-        },
-        notify: false,
-        open: false
-    });
-
-    gulp.watch(styleSrc,['sass']);
-    gulp.watch(scriptSrc,['scripts']);
-    gulp.watch(vendorSrc,['vendors']);
-    gulp.watch(['build/*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js']).on('change', browserSync.reload);
-
-});
 
 
 // use default task to launch Browsersync and watch JS files
-gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
+gulp.task('default', [ 'sass', 'scripts', 'vendors',], function () {});
 
 
 gulp.task('clean', del.bind(null, ['build/*', '!build/.git'], { dot: true }));
