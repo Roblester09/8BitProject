@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "description": "Eight Bit Website",
     "main": "index.html",
-    "scripts": {},
+    "scripts": {
+        "start": "node app",
+        "postinstall": "gulp default"
+    },
     "author": "Robert Lester",
     "license": "ISC",
     "devDependencies": {
