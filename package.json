@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "description": "Eight Bit Website",
     "main": "index.html",
-    "scripts": {},
+    "scripts": {
+        "start": "nodemon app.js",
+        "heroku-postbuild": "gulp"
+    },
     "author": "Robert Lester",
     "license": "ISC",
     "devDependencies": {
