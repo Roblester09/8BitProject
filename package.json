@@ -4,8 +4,8 @@
     "description": "Eight Bit Website",
     "main": "index.html",
     "scripts": {
-        "build": "gulp",
-        "start": "node app.js"
+        "start": "node app",
+        "postinstall": "gulp"
     },
     "author": "Robert Lester",
     "license": "ISC",
