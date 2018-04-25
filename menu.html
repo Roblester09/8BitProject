@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>8-Bit Confectionery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container grid">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <nav class="main-nav">
+                <ul class="unstyled-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+        <video class="header-video" preload="auto" autoplay="true" loop="loop" muted="muted">
+            <source src="img/fun-vid.mp4" type="video/mp4"> video not supported
+        </video>
+    </header>
+    <section class="hero">
+        <div class="container grid">
+            <div class="hero-text col col--2-3">
+                <h1 class="title-large">
+                    <span>1-up your taste buds to the</span> next level</h1>
+                <a href="" class="btn btn--primary">Find The Flavor!</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sales points
+        ====================== -->
+    
+    <section class="sales-points">
+        <div class="container grid">
+            <h1 class="col col--full">Promote your app</h1>
+    
+            <div class="sales-point col col--full">
+                <img src="img/sales-responsive.png" alt="">
+                <h2>Responsive Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit posuere finibus. Phasellus nibh
+                    lorem, cursus eu justo in, bibendum rutrum diam. </p>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- promo section
+    ====================== -->
+
+    <section class="promo">
+
+        <div class="grid">
+
+            <div class="col col--1-2 bg-primary">
+                <h1>Cake Pops</h1>
+                <h2>$1.00</h2>
+                <p>Grand Opening Special!</p>
+                <p>
+                    Delicately designed, our moist cake pops will melt in your mouth and leave you wanting more. Whether you are celebrating
+                    a birthday, wedding, or game night, these cake pops are the perfect addition to any party! They come individually packaged
+                    with a minimum order of ten pops.
+                </p>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="HGLBU4NMRX37E">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on0" value="Flavor of Cake">Flavor of Cake</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200">
+                            </td>
+                        </tr>
+                    </table>
+                    <input class="btn btn--primary" type="submit" value="Add to Cart" name="submit" alt="">
+                </form>
+            </div>
+
+            <div class="col col--1-2 img-box-1 lg-screen">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- promo section
+            ====================== -->
+    
+    <section class="promo">
+    
+        <div class="grid">
+
+            <div class="col col--1-2 img-box-3 lg-screen">
+    
+            </div>
+    
+            <div class="col col--1-2 bg-primary">
+                <h1>Fruit Cookies</h1>
+                <h2>$1.00</h2>
+                <p>Grand Opening Special!</p>
+                <p>
+                    Our specialty fruit cookies will unlock a new level of flavor that’ll be sure to excite your taste buds. Choose from strawberry,
+                    orange, and lemon cookies, all enhanced with natural flavors that will pack a punch! Cookies come in a sampler
+                    pack of three, with a minimum order of five packs. Please contact us for flavor combination pack options.
+                </p>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="J2DZL3EGS8VJ2">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on0" value="Choose your flavor">Choose your flavor</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="os0">
+                                    <option value="Select...">Select... </option>
+                                    <option value="Strawberry">Strawberry </option>
+                                    <option value="Orange">Orange </option>
+                                    <option value="Lemon">Lemon </option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input class="btn btn--primary" type="submit" value="Add to Cart" name="submit" alt="">
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- promo section
+            ====================== -->
+    
+    <section class="promo">
+    
+        <div class="grid">
+    
+            <div class="col col--1-2 bg-primary">
+                <h1>Specialty Sugar Cookies</h1>
+                <p>
+                    Completely customized for your party or event, these sugar cookies make a great gift or special touch for a party!
+                </p>
+                <a href="" class="btn btn--primary">Contact Us</a>
+            </div>
+
+            <div class="col col--1-2 img-box-4 lg-screen">
+            
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer
+    ====================== -->
+
+    <footer>
+        <div class="container container--footer">
+            <p class="title-footer">Take your app to the next level</p>
+            <ul class="unstyled-list social-links">
+                <li>
+                    <a href="">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="unstyled-list nav-footer">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">Pricing</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/97974f9c24.js"></script>
+
+    <script src="js/scrips.js"></script>
+</body>
+
+</html>
