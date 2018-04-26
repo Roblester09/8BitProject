@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -9,7 +10,7 @@
 /* Document
    ========================================================================== */
 html {
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   /* 2 */
@@ -541,7 +542,7 @@ img {
 }
 
 .bg-secondary {
-  background: #001F3F;
+  background-color: #0074D9;
   color: white;
   padding: 5em 2.5em;
 }
@@ -570,9 +571,10 @@ h2 {
 }
 
 .title-large {
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: .9;
+  font-family: 'Press Start 2P';
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .title-large span {
@@ -703,6 +705,7 @@ h2 {
 
 .main-nav a {
   color: white;
+  text-decoration: none;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   display: -webkit-box;
@@ -805,21 +808,6 @@ h2 {
   max-width: 15rem;
 }
 
-header video {
-  display: none;
-}
-
-@media (min-width: 925px) {
-  .header-video {
-    display: inline;
-    position: fixed;
-    top: -25px;
-    left: 0;
-    width: 100%;
-    z-index: -100;
-  }
-}
-
 .hero {
   background: -webkit-gradient(linear, left top, right top, from(#2e242c), to(#00ADEE));
   background: -webkit-linear-gradient(left, #2e242c, #00ADEE);
@@ -842,6 +830,21 @@ header video {
 @media (min-width: 725px) {
   .hero-text {
     margin-top: 10vmax;
+  }
+}
+
+section video {
+  display: none;
+}
+
+@media (min-width: 925px) {
+  .hero-video {
+    display: inline;
+    position: fixed;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    z-index: -100;
   }
 }
 
@@ -868,9 +871,11 @@ header video {
   }
 }
 
-.promo .bg-primary {
+.promo .bg-primary,
+.promo .bg-secondary {
   text-align: left;
   padding-left: 7%;
+  padding-right: 7%;
   padding-top: 7.5em;
   padding-bottom: 7.5em;
 }
