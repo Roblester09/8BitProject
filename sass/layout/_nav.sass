@@ -59,6 +59,67 @@
     &.is-open
         left: 0
 
+.secondary-nav
+    font-family: "Press Start 2P"
+    background: $aqua
+    position: absolute
+    top: 2em
+    right: 0
+    left: 100%
+    font-size: 1rem
+
+    overflow: hidden
+
+    transition: all ease-in-out 250ms
+
+    @media(min-width: 725px)
+        position: relative
+        flex: auto
+        background: none
+        margin-top: 1em
+        margin-left: 12em
+        left: 0
+
+    ul
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        height: 100vh
+
+        @media(min-width: 725px)
+            flex-direction: row
+            height: auto
+
+    li
+        flex: 1 1 auto
+        border-bottom: 1px solid rgba(0, 0, 0, .15)
+        display: flex
+
+        @media(min-width: 725px)
+            display: inline-block
+            border: none
+            text-align: right
+
+    a
+        color: white
+        text-decoration: none
+        flex-basis: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+
+        @media(min-width: 725px)
+            display: inline
+
+        &:hover
+            background: rgba(0, 0, 0, .10)
+            @media(min-width: 725px)
+                background: none
+                color: darken(white, 15%)
+
+    &.is-open
+        left: 0
+
 
 // Hamburger menu
 
