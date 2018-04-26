@@ -881,10 +881,9 @@ section video {
 }
 
 .promo .img-box-1 {
+  background: url(../img/cakepops.png);
   background-size: cover;
   background-position: center;
-  padding: 0px;
-  margin: 0px;
 }
 
 .promo .img-box-2 {
